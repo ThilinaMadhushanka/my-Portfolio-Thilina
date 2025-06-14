@@ -137,7 +137,7 @@ const Portfolio = () => {
   const projects = [
     {
       title: 'Bookify - Booking Management System',
-      description: 'Full-stack booking platform for lectures, doctors and fitness coaches with React frontend and Spring Boot backend. Features responsive UI, JWT authentication, and RESTful API integration.',
+      description: 'Full-stack booking platform for lectures, doctors and fitness coaches with React frontend and Spring Boot backend. Features responsive UI, JWT authentication and RESTful API integration.',
       tech: ['React', 'TypeScript', 'Spring Boot', 'MySQL', 'Tailwind CSS'],
       image: 'https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=500&h=300&fit=crop',
       github: 'https://github.com/ThilinaMadhushanka/Bookify',
@@ -145,7 +145,7 @@ const Portfolio = () => {
     },
     {
       title: 'DriveSafeX - IoT Accident Detection',
-      description: 'Smart safety system using ESP32 for real-time accident detection and prevention. Features ultrasonic collision alerts, gyroscope-based detection, and Firebase live monitoring.',
+      description: 'Smart safety system using ESP32 for real-time accident detection and prevention. Features ultrasonic collision alerts, gyroscope-based detection and Firebase live monitoring.',
       tech: ['ESP32', 'Firebase', 'JavaScript', 'IoT', 'GPS'],
       image: 'https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=500&h=300&fit=crop',
       github: 'https://github.com/ThilinaMadhushanka/Accident-Prevention-and-Detection-System',
@@ -153,7 +153,7 @@ const Portfolio = () => {
     },
     {
       title: 'AI-Powered Travel Assistant',
-      description: 'Smart multi-agent system for personalized travel planning using CrewAI and LangGraph. Features speech recognition, vector search, and natural language interactions.',
+      description: 'Smart multi-agent system for personalized travel planning using CrewAI and LangGraph. Features speech recognition, vector search and natural language interactions.',
       tech: ['Python', 'CrewAI', 'LangChain', 'Streamlit', 'OpenAI'],
       image: 'https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=500&h=300&fit=crop',
       github: 'https://github.com/ThilinaMadhushanka/AI-Travel-Assistant',
@@ -161,7 +161,7 @@ const Portfolio = () => {
     },
     {
       title: 'Real-Time Video Chat App',
-      description: 'Peer-to-peer video chat platform with screen sharing, text chat, and room-based communication using WebRTC and Socket.IO for real-time interaction.',
+      description: 'Peer-to-peer video chat platform with screen sharing, text chat and room-based communication using WebRTC and Socket.IO for real-time interaction.',
       tech: ['Node.js', 'WebRTC', 'Socket.IO', 'JavaScript'],
       image: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=500&h=300&fit=crop',
       github: 'https://github.com/ThilinaMadhushanka/Real-Time-Video-Conferencing-Application-using-WebRTC',
@@ -177,7 +177,7 @@ const Portfolio = () => {
     },
     {
       title: 'Blockchain IoT Security System',
-      description: 'Lightweight blockchain-integrated security system for IoT devices using ECDSA, AES-128, and simplified PoS consensus for secure, scalable communication.',
+      description: 'Lightweight blockchain-integrated security system for IoT devices using ECDSA, AES-128 and simplified PoS consensus for secure, scalable communication.',
       tech: ['Python', 'Blockchain', 'ECDSA', 'AES-128', 'NS3'],
       image: 'https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=500&h=300&fit=crop',
       github: '#',
@@ -188,16 +188,16 @@ const Portfolio = () => {
       description: 'Offline text summarization web application using Flask and Hugging Face Transformers. Converts long text into concise summaries without requiring paid API keys or internet connection.',
       tech: ['Python', 'Flask', 'Hugging Face', 'BART', 'HTML/CSS'],
       image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&h=300&fit=crop',
-      github: '#',
+      github: 'https://github.com/ThilinaMadhushanka/LLM_AI-Summary',
       live: '#'
     },
     {
       title: 'Deep Learning Image Classification',
-      description: 'Custom neural network implementation for image classification built from scratch using NumPy. Features forward/backward propagation, SGD with momentum, dropout regularization, and comprehensive performance visualization.',
+      description: 'Custom neural network implementation for image classification built from scratch using NumPy. Features forward/backward propagation, SGD with momentum, dropout regularization and comprehensive performance visualization.',
       tech: ['Python', 'NumPy', 'Pandas', 'Matplotlib', 'Scikit-learn'],
       image: 'https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=500&h=300&fit=crop',
-      github: '#',
-      live: '#'
+      github: 'https://github.com/ThilinaMadhushanka/Deep_learning_project',
+      live: 'https://www.linkedin.com/feed/update/urn:li:activity:7322572128115904512/'
     }
   ];
 
@@ -304,10 +304,10 @@ const Portfolio = () => {
             <div className={`transform transition-all duration-1000 delay-300 ${isVisible.about ? 'translate-x-0 opacity-100' : 'translate-x-10 opacity-0'}`}>
               <h3 className="text-2xl font-bold mb-6 text-purple-400">Hi, I'm Thilina!</h3>
               <p className="text-gray-300 text-lg mb-6 leading-relaxed">
-                I'm a passionate full-stack developer and Computer Engineering undergraduate with a strong foundation in both software and hardware systems. With hands-on experience in building scalable, real-time, and intelligent applications, I thrive on solving real-world problems through strategic thinking and efficient coding.
+                I'm a passionate full-stack developer and Computer Engineering undergraduate with a strong foundation in both software and hardware systems. With hands-on experience in building scalable, real-time and intelligent applications, I thrive on solving real-world problems through strategic thinking and efficient coding.
               </p>
               <p className="text-gray-300 text-lg mb-6 leading-relaxed">
-                Whether it's crafting responsive UIs, engineering IoT systems, or exploring AI-powered solutions, I love creating meaningful tech that drives positive change. Outside of coding, you'll often find me diving into emerging technologies, working on research-driven projects, or contributing to the open-source community.
+                Whether it's crafting responsive UIs, engineering IoT systems or exploring AI-powered solutions, I love creating meaningful tech that drives positive change. Outside of coding, you'll often find me diving into emerging technologies, working on research-driven projects or contributing to the open-source community.
               </p>
               <div className="flex space-x-4">
                 <div className="bg-gradient-to-r from-purple-500/20 to-pink-500/20 p-4 rounded-lg border border-white/10">
