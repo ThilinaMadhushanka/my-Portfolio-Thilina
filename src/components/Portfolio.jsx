@@ -108,10 +108,10 @@ const Portfolio = () => {
   const education = [
     {
       degree: 'Bachelor of Science in Computer Engineering',
-      institution: 'University of Jaffna',
+      institution: 'Faculty Of Engineering, University of Jaffna',
       period: '2022 - Present',
-      gpa: '2.70/4.0',
-      description: 'Specializing in Computer engineering, embedded systems and AI/ML applications. Active member of IEEE student branch and robotics club.',
+      Results: '2.6/4.0',
+      description: 'Specializing in Computer engineering, embedded systems and AI/ML applications. Active member of IEEE student branch.',
       coursework: ['Data Structures & Algorithms', 'Database Systems', 'Computer Networks', 'Embedded Systems', 'Machine Learning', 'Software Engineering'],
       image: 'https://th.bing.com/th/id/OIP.V2r4etsFSTphXamLkOVFlAHaHa?rs=1&pid=ImgDetMain'
     },
@@ -128,7 +128,7 @@ const Portfolio = () => {
       degree: 'Ordinary Level (O/L)',
       institution: 'Rambuka National College, Rambuka',
       period: '2006 - 2016',
-      Result: 'A-6,B-2,S-1',
+      Results: 'A-6,B-2,S-1',
       description: 'Focused on Mathematics, Science, Sinhala, Buddhism, History, Commerce, Sinhala Literature, Agriculture And English with distinction in Mathematics, Agriculture, Sinhala Literature, Buddhism, History and Commerce.',
       coursework: ['Mathematics', 'Agriculture', 'Sinhala Literature', 'Buddhism', 'History', 'Commerce', 'Sinhala', 'Science', 'English']
     }
@@ -349,7 +349,7 @@ const Portfolio = () => {
                       <div className="flex justify-between items-center mb-4">
                         <span className="text-gray-400">{edu.period}</span>
                         <span className="bg-purple-500/20 text-purple-300 px-3 py-1 rounded-full text-sm">
-                          {edu.Result}
+                          {edu.Results}
                         </span>
                       </div>
                       <p className="text-gray-300 mb-4 leading-relaxed">{edu.description}</p>
