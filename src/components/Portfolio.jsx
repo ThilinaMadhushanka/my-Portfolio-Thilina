@@ -62,11 +62,11 @@ const Portfolio = () => {
       icon: <Code size={24} />
     }
   ];
-  // Updated skills grouped by category (using only available lucide-react icons)
+  
   const skillCategories = [
     {
       name: 'Programming Languages',
-      icon: <Terminal size={24} />, // generic code/terminal icon
+      icon: <Terminal size={24} />,
       skills: [
         { name: 'Java', icon: <Code size={20} /> },
         { name: 'Python', icon: <Code size={20} /> },
@@ -81,7 +81,7 @@ const Portfolio = () => {
     },
     {
       name: 'Frameworks & Libraries',
-      icon: <Braces size={24} />, // curly braces for frameworks
+      icon: <Braces size={24} />, 
       skills: [
         { name: 'Spring Boot', icon: <Braces size={20} /> },
         { name: 'React.js', icon: <Globe size={20} /> },
@@ -95,7 +95,7 @@ const Portfolio = () => {
     },
     {
       name: 'Developer Tools',
-      icon: <Settings size={24} />, // settings/tools icon
+      icon: <Settings size={24} />, 
       skills: [
         { name: 'Git', icon: <GitBranch size={20} /> },
         { name: 'Matlab', icon: <Settings size={20} /> },
@@ -107,7 +107,7 @@ const Portfolio = () => {
     },
     {
       name: 'Databases',
-      icon: <Database size={24} />, // database icon
+      icon: <Database size={24} />,
       skills: [
         { name: 'MySQL', icon: <Database size={20} /> },
         { name: 'MongoDB', icon: <Database size={20} /> },
@@ -116,7 +116,7 @@ const Portfolio = () => {
     },
     {
       name: 'Other',
-      icon: <List size={24} />, // list icon for misc
+      icon: <List size={24} />, 
       skills: [
         { name: 'Figma', icon: <Figma size={20} /> },
         { name: 'Jira', icon: <List size={20} /> },
