@@ -62,7 +62,7 @@ const Portfolio = () => {
       icon: <Code size={24} />
     }
   ];
-  
+
   const skillCategories = [
     {
       name: 'Programming Languages',
@@ -352,7 +352,7 @@ const Portfolio = () => {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className={`transform transition-all duration-1000 ${isVisible.about ? 'translate-x-0 opacity-100' : '-translate-x-10 opacity-0'}`}>
               <div className="w-80 h-80 mx-auto rounded-2xl bg-gradient-to-br from-purple-500/20 to-pink-500/20 backdrop-blur-sm border border-white/10 flex items-center justify-center text-8xl">
-                <img src="https://scontent.fcmb4-2.fna.fbcdn.net/v/t39.30808-6/376728350_1292994751351301_1136127884073783092_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeEbz6rwW3uV58SdfJDX_S8FhmBYd-PPtf6GYFh348-1_nm6KIrJ24W8CCgqzto0R9DOa2AsIzyv1dMcqJQfL4lo&_nc_ohc=lsatmuzv2WUQ7kNvwEwfnqs&_nc_oc=Adl8XIGF_9nE0kUXGAZPxMZQXCQiDo4_8B8YzJ_ypbBkHwi_UVF3ghKzSfm4vvypS61plMY_ODbwbewVbOFCaxM8&_nc_zt=23&_nc_ht=scontent.fcmb4-2.fna&_nc_gid=73anODeKjobkX9hn7OhErA&oh=00_AfNV27k0dF4ZpvxrLA1jOUz3N_ATSsxLGP5p5nncq4eQxw&oe=685201BA" alt="Thilina Madhushanka" className="w-full h-full object-cover rounded-2xl" />
+                <img src="https://scontent.fcmb11-2.fna.fbcdn.net/v/t39.30808-6/376728350_1292994751351301_1136127884073783092_n.jpg?stp=dst-jpg_p526x296_tt6&_nc_cat=105&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeEbz6rwW3uV58SdfJDX_S8FhmBYd-PPtf6GYFh348-1_nm6KIrJ24W8CCgqzto0R9DOa2AsIzyv1dMcqJQfL4lo&_nc_ohc=GD83KqrzYGMQ7kNvwHgolmX&_nc_oc=AdnQomvxl-49Wq2chOXeDcnqg7jH-p2wkcmO9txXP63RiPNA3T-gbjv5YOsT2JLt37djYghv7uRMuurnqIiyYddr&_nc_zt=23&_nc_ht=scontent.fcmb11-2.fna&_nc_gid=_2PNeS4xDf7IZT0WD2T68A&oh=00_AfPsBtEXJgxVPFwAlMj7efBfwTH4aSBZ3b5ziCWorW04iQ&oe=685CC5FA" alt="Thilina Madhushanka" className="w-full h-full object-cover rounded-2xl" />
               </div>
             </div>
             <div className={`transform transition-all duration-1000 delay-300 ${isVisible.about ? 'translate-x-0 opacity-100' : 'translate-x-10 opacity-0'}`}>
