@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X, Github, Linkedin, Mail, ExternalLink, ChevronDown, Code, Palette, Database, Globe, Award, BookOpen, Languages, GraduationCap } from 'lucide-react';
+import { Menu, X, Github, Linkedin, Mail, ExternalLink, ChevronDown, Code, Palette, Database, Globe, Award, BookOpen, Languages, GraduationCap, Terminal, Braces, Settings, GitBranch, Figma, Chrome, LayoutDashboard, List, BarChart3, Network } from 'lucide-react';
 
 const Portfolio = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -30,17 +30,6 @@ const Portfolio = () => {
     document.getElementById(sectionId)?.scrollIntoView({ behavior: 'smooth' });
     setIsMenuOpen(false);
   };
-
-  const skills = [
-    { name: 'Java', level: 75, icon: <Code size={20} /> },
-    { name: 'Python', level: 75, icon: <Code size={20} /> },
-    { name: 'C++', level: 70, icon: <Code size={20} /> },
-    { name: 'JavaScript', level: 75, icon: <Code size={20} /> },
-    { name: 'React.js', level: 85, icon: <Globe size={20} /> },
-    { name: 'Spring Boot', level: 60, icon: <Database size={20} /> },
-    { name: 'MySQL/PostgreSQL', level: 80, icon: <Database size={20} /> },
-    { name: 'Go (Golang)', level: 70, icon: <Code size={20} /> }
-  ];
 
   const languages = [
     { name: 'English', level: 'Fluent', proficiency: 65 },
@@ -73,7 +62,70 @@ const Portfolio = () => {
       icon: <Code size={24} />
     }
   ];
-
+  // Updated skills grouped by category (using only available lucide-react icons)
+  const skillCategories = [
+    {
+      name: 'Programming Languages',
+      icon: <Terminal size={24} />, // generic code/terminal icon
+      skills: [
+        { name: 'Java', icon: <Code size={20} /> },
+        { name: 'Python', icon: <Code size={20} /> },
+        { name: 'C++', icon: <Code size={20} /> },
+        { name: 'SQL', icon: <Code size={20} /> },
+        { name: 'JavaScript', icon: <Code size={20} /> },
+        { name: 'Go', icon: <Code size={20} /> },
+        { name: 'PHP', icon: <Code size={20} /> },
+        { name: 'Matlab', icon: <Code size={20} /> },
+        { name: 'HTML', icon: <Code size={20} /> },
+      ]
+    },
+    {
+      name: 'Frameworks & Libraries',
+      icon: <Braces size={24} />, // curly braces for frameworks
+      skills: [
+        { name: 'Spring Boot', icon: <Braces size={20} /> },
+        { name: 'React.js', icon: <Globe size={20} /> },
+        { name: 'Node.js', icon: <Braces size={20} /> },
+        { name: 'FastAPI', icon: <Braces size={20} /> },
+        { name: 'Express.js', icon: <Braces size={20} /> },
+        { name: 'Bootstrap', icon: <Palette size={20} /> },
+        { name: 'Tailwind CSS', icon: <Palette size={20} /> },
+        { name: 'AngularJS', icon: <Braces size={20} /> },
+      ]
+    },
+    {
+      name: 'Developer Tools',
+      icon: <Settings size={24} />, // settings/tools icon
+      skills: [
+        { name: 'Git', icon: <GitBranch size={20} /> },
+        { name: 'Matlab', icon: <Settings size={20} /> },
+        { name: 'VS Code', icon: <Settings size={20} /> },
+        { name: 'Cursor', icon: <Chrome size={20} /> },
+        { name: 'Postman', icon: <Settings size={20} /> },
+        { name: 'Intellij', icon: <Settings size={20} /> },
+      ]
+    },
+    {
+      name: 'Databases',
+      icon: <Database size={24} />, // database icon
+      skills: [
+        { name: 'MySQL', icon: <Database size={20} /> },
+        { name: 'MongoDB', icon: <Database size={20} /> },
+        { name: 'PostgreSQL', icon: <Database size={20} /> },
+      ]
+    },
+    {
+      name: 'Other',
+      icon: <List size={24} />, // list icon for misc
+      skills: [
+        { name: 'Figma', icon: <Figma size={20} /> },
+        { name: 'Jira', icon: <List size={20} /> },
+        { name: 'Data Structures and Algorithms', icon: <BarChart3 size={20} /> },
+        { name: 'OOP', icon: <LayoutDashboard size={20} /> },
+        { name: 'RESTful APIs', icon: <Network size={20} /> },
+      ]
+    }
+  ];
   const certifications = [
     {
       title: 'Python Programming',
@@ -200,6 +252,8 @@ const Portfolio = () => {
       live: 'https://www.linkedin.com/feed/update/urn:li:activity:7322572128115904512/'
     }
   ];
+
+
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 text-white">
@@ -397,25 +451,21 @@ const Portfolio = () => {
             Skills & Technologies
           </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
-            {skills.map((skill, index) => (
-              <div
-                key={skill.name}
-                className={`transform transition-all duration-700 delay-${index * 100} ${
-                  isVisible.skills ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
-                }`}
-              >
-                <div className="bg-gradient-to-r from-purple-500/10 to-pink-500/10 p-6 rounded-xl border border-white/10 backdrop-blur-sm hover:from-purple-500/20 hover:to-pink-500/20 transition-all">
+            {skillCategories.map((category, catIdx) => (
+              <div key={category.name} className={`transform transition-all duration-700 delay-${catIdx * 100} ${isVisible.skills ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
+                <div className="bg-gradient-to-r from-purple-500/10 to-pink-500/10 p-6 rounded-xl border border-white/10 backdrop-blur-sm hover:from-purple-500/20 hover:to-pink-500/20 transition-all mb-6">
                   <div className="flex items-center mb-4">
-                    <div className="text-purple-400 mr-3">{skill.icon}</div>
-                    <h3 className="text-xl font-semibold">{skill.name}</h3>
+                    <div className="text-purple-400 mr-3">{category.icon}</div>
+                    <h3 className="text-xl font-bold">{category.name}</h3>
                   </div>
-                  <div className="w-full bg-gray-700 rounded-full h-3 mb-2">
-                    <div
-                      className="bg-gradient-to-r from-purple-500 to-pink-500 h-3 rounded-full transition-all duration-1000 ease-out"
-                      style={{ width: isVisible.skills ? `${skill.level}%` : '0%' }}
-                    ></div>
+                  <div className="flex flex-wrap gap-3">
+                    {category.skills.map((skill) => (
+                      <div key={skill.name} className="flex items-center bg-black/20 px-3 py-2 rounded-lg border border-white/10 mb-2 mr-2">
+                        <span className="text-purple-400 mr-2">{skill.icon}</span>
+                        <span className="text-sm font-medium text-white">{skill.name}</span>
+                      </div>
+                    ))}
                   </div>
-                  <span className="text-sm text-gray-400">{skill.level}%</span>
                 </div>
               </div>
             ))}
